@@ -2,9 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 
-# -----------------------------
+
 # PARAMETERS
-# -----------------------------
+
 n = int(input("Enter the number of masses: "))        
 mode_no = int(input("Enter the mode number (1 to n): "))# number of masses
 L = 10              # total length
@@ -14,14 +14,14 @@ m = 1               # mass
        # mode number (1 to n)
 dt = 0.03
 
-# -----------------------------
+
 # EQUILIBRIUM POSITIONS
-# -----------------------------
+
 eq_x = np.linspace(0, L, n)
 y = np.zeros(n)
 
 # -----------------------------
-# CREATE COUPLING MATRIX
+# CREATING COUPLING MATRIX
 # -----------------------------
 K = np.zeros((n, n))
 
